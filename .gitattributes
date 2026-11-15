@@ -1,0 +1,4 @@
+# 统一行尾策略：仓库内一律 LF 存储，检出时按平台转换。
+# 之前 references/board.md 与 references/glossary.md 是 LF，其余文件是 CRLF，
+# 在没有 core.autocrlf=true 的环境（Linux / CI / 他人机器）会产生整文件 diff。
+* text=auto
