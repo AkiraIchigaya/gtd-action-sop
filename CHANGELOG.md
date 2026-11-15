@@ -1,6 +1,26 @@
 # 更新日志
 
-版本号遵循技能包目录版本；`version` 字段写在 `SKILL.md` 的 frontmatter 中。
+版本号遵循技能包目录版本，只记录在本文件与 `README.md` 中。
+
+> DeepSeek Harness 的 Skill 加载器（`@deepseek-ai/dsh-skill-filesystem`）只识别 frontmatter 的 `name`、`description`、`whenToUse`、`disable-model-invocation`、`user-invocable` 与 `metadata`，不支持 `version` 字段（写了也会被静默忽略）。因此 v1.3 起不再在 frontmatter 中维护版本号。
+
+## [1.3] - 2026-11-16
+
+### 新增
+
+- 新增 `references/board.md`：触发 → 行动 → 所属三列看板的课件逐行转录原表，含全局/安排/执行/复盘四段完整表格、决策流程图全文、触发清单全文与时间块规则。与既有 `sop-table.md` 构成"原表 / 加工表"互补对照。
+- 新增 `references/glossary.md`：本方法内部术语表（四个包、四个法、两个箱），用于消除"所属"一列的术语歧义。
+
+### 变更
+
+- `SKILL.md` 的「参考资料」一节补充上述两份文档的说明与定位。
+- 移除 `SKILL.md` frontmatter 中的 `version` 字段。该字段不被 Skill 加载器识别（静默忽略），版本号统一由本文件与 `README.md` 维护。
+
+### 未改动
+
+- `SKILL.md` 的四大核心工作流（收集、决策、行动、校准）与五大可选插件结构**保持不变**。
+- `references/decision-flow.md`、`examples.md`、`plugins.md`、`sop-table.md`、`trigger-list.md` 五个既有参考文件**未做任何修改**。
+- `SKILL.md` 的 `description` 与 `name`（`gtd-action-sop`）保持不变。
 
 ## [1.2] - 2026-11-15
 

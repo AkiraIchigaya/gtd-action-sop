@@ -4,7 +4,7 @@
 
 > 把脑海中的零散想法转化为下一步行动，让任务管理不再成为另一项需要管理的任务。
 
-**当前版本：v1.2**
+**当前版本：v1.3**
 
 ## 📖 项目简介
 
@@ -71,8 +71,10 @@ gtd-action-sop/
 ├── README.md
 ├── CHANGELOG.md
 └── references/
+    ├── board.md
     ├── decision-flow.md
     ├── examples.md
+    ├── glossary.md
     ├── plugins.md
     ├── sop-table.md
     └── trigger-list.md
@@ -149,7 +151,9 @@ Skill 本身不提供文件同步服务，也不会自动保证跨会话记忆�
 | 文件 | 用途 |
 |---|---|
 | `SKILL.md` | 核心工作流与 Agent 执行规则 |
+| `references/board.md` | 触发-行动-所属看板**原始全表**（课件逐行转录，与 `sop-table.md` 互为原表/加工表） |
 | `references/decision-flow.md` | 四关决策流程 |
+| `references/glossary.md` | 本方法术语表（四个包、四个法、两个箱） |
 | `references/sop-table.md` | 四阶段 SOP 总表 |
 | `references/trigger-list.md` | 遗漏事项唤醒清单 |
 | `references/plugins.md` | 五种可选方法的详细规则 |
@@ -157,6 +161,13 @@ Skill 本身不提供文件同步服务，也不会自动保证跨会话记忆�
 | `CHANGELOG.md` | 版本更新记录 |
 
 ## 📌 版本记录
+
+### v1.3
+
+- 新增 `references/board.md`：触发 → 行动 → 所属三列看板的课件逐行转录原表
+- 新增 `references/glossary.md`：方法内部术语表
+- `SKILL.md` 在「参考资料」中补充上述两份文档，原有四大核心/五大插件结构**未改动**
+- 移除 `SKILL.md` frontmatter 中的 `version` 字段（加载器不支持，版本改由本文件与 `CHANGELOG.md` 记录）
 
 ### v1.2
 
